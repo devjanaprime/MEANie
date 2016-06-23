@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>MEANie</title>
+    <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="scripts/script.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <h1>MEANie</h1>
+    <p>A simple, ugly MEAN stack example. Console has output from GET call.</p>
+    <div ng-controller="whereMyPeeps">
+      <input type="text" value="" ng-model="nameIn" placeholder="Name">
+      <input type="text" value="" ng-model="locationIn" placeholder="Location">
+      <button ng-click='addRecord()'>Add</button>
+      <button ng-click='getRecords()'>Read</button>
+    </div>
+  </body>
+</html>
