@@ -2,7 +2,6 @@ var express = require('express');
 var app=express();
 var path = require('path');
 var bodyParser = require('body-parser');
-/// why do we need this????
 app.use( bodyParser.json() );
 var mongoose = require('mongoose');
 // 27017 is default mongo port
