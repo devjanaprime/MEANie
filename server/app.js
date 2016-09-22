@@ -1,11 +1,11 @@
-var express = require('express');
+var express = require( 'express' );
 var app=express();
-var path = require('path');
-var bodyParser = require('body-parser');
+var path = require( 'path' );
+var bodyParser = require( 'body-parser' );
 app.use( bodyParser.json() );
-var mongoose = require('mongoose');
+var mongoose = require( 'mongoose' );
 // 27017 is default mongo port
-mongoose.connect('localhost:/27017/test')
+mongoose.connect( 'localhost:/27017/test' );
 var ourSchema = new  mongoose.Schema({
   name: String,
   location: String
@@ -14,11 +14,12 @@ var ourModel = mongoose.model( 'ourModel', ourSchema );
 
 // base url
 app.get( '/', function( req, res ){
-  res.sendFile( path.resolve( 'views/index.html' ) );
+  res.sendFile( path.resolve( 'public/index.html' ) );
 });
 
 // get call
 app.get( '/getRecords', function( req, res ){
+  // get and send back all the things
   ourModel.find()
   .then( function( data ){
     res.send( data );
@@ -32,14 +33,14 @@ app.listen( 8080, 'localhost', function( req, res ){
 
 // post call
 app.post( '/testPost', function( req, res ){
-  console.log( 'req.body: ' + req.body.name );
+  console.log( 'req.body.name: ' + req.body.name );
   // retrieved the req.body
   // putting it into an object to be saved in the db
   var recordToAdd={
     name: req.body.name,
     location: req.body.location
   }
-  // MAGIIIIIIIIIIC
+  // create new record
   var newRecord=ourModel( recordToAdd );
   newRecord.save();
 });
