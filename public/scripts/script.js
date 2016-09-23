@@ -4,7 +4,7 @@ $scope.addRecord = function(){
 event.preventDefault();
 var objectToSend ={
 name: $scope.nameIn,
-location: $scope.locationIn
+location: $scope.locationIn,
 };
 $http({
 method: 'POST',
@@ -15,11 +15,11 @@ $scope.nameIn ='';
 $scope.locationIn='';
 };
 $scope.getRecords = function(){
-$http({
+$.http({
 method: 'GET',
 url: '/getRecords',
 }).then( function( response ){
-$scope.allTheRecords = response; // .data;
+$scope.allTheRecords = response;
 console.log( $scope.allTheRecords );
 }), function myError( response ){
 console.log( response.statusText );
