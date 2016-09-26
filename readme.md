@@ -63,7 +63,13 @@ Let's update master:
 git checkout master
 ```
 
-This will move you over to the master branch, but we still need to merge in our updates from 'cleanUp'
+In case any group members have made updates to Master we'll pull from the origin master before merging our code into local master.
+
+```
+git pull origin master
+```
+
+This will update your local master branch with what's on github, but we still need to merge in our updates from 'cleanUp' to make it current.
 
 ```
 git merge cleanUp
