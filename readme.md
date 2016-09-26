@@ -86,6 +86,7 @@ visual representation of what we just did
 
 DOM Append
 ----------
+(if time allows)
 
 At this point both your branches are up to date both locally and on github. Let's break off a new branch for showing the info on the DOM:
 
