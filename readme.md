@@ -20,9 +20,9 @@ You can think of this assignment in two tiers:
 
 2 - add functionality as requested from the client
 
-Your final project should have a 'master' branch that is the final project. A
+Your final project should have a 'master' branch that is the final project. As well branches for each stage of the work. This is outlined below
 
-Each student will turn in their own repo, but you can feel free to talk/work with your pod-mates.
+This is a 'peer' activity, but feel free to talk/work with your pod-mates and cohort-mates.
 
 Your github project should have the following branches:
 * 'master' (final assignment)
