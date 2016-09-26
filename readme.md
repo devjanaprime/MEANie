@@ -82,7 +82,7 @@ git push origin master
 
 visual representation of what we just did
 -----------------------------------------
-![branching](images/branching.png)
+![branching](images/branching_0.png)
 
 DOM Append
 ----------
