@@ -1,26 +1,26 @@
 var myApp=angular.module( 'myApp', [] );
-myApp.controller( 'whereMyPeeps', [ '$scope', '$http', function( $scope, $http ){
-$scope.addRecord = function(){
-event.preventDefault();
+myApp.controller( 'WhereMyPeeps', [ '$http', function( $http ){
+var vm = this;
+vm.addRecord = function(){
 var objectToSend ={
-name: $scope.nameIn,
-location: $scope.locationIn,
+name: vm.nameIn,
+location: vm.locationIn,
 };
 $http({
 method: 'POST',
 url: '/testPost',
 data: objectToSend
 });
-$scope.nameIn ='';
-$scope.locationIn='';
+vm.nameIn ='';
+vm.locationIn='';
 };
-$scope.getRecords = function(){
-$.http({
+vm.getRecords = function(){
+$http({
 method: 'GET',
 url: '/getRecords',
 }).then( function( response ){
-$scope.allTheRecords = response;
-console.log( $scope.allTheRecords );
+vm.allTheRecords = response;
+console.log( vm.allTheRecords );
 }), function myError( response ){
 console.log( response.statusText );
 };
