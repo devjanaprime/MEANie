@@ -1,4 +1,4 @@
-![MEANie logo](public/images/MEANie.JPG)
+![MEANie logo](public/images/meanie_3.JPG)
 
 Project Overview
 ================
