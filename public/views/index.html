@@ -4,17 +4,18 @@
     <meta charset="utf-8">
     <title>MEANie</title>
     <script src="vendors/angular.min.js" charset="utf-8"></script>
-    <script src="scripts/script.js" charset="utf-8"></script>
+    <script src="scripts/peepsApp.js" charset="utf-8"></script>
+    <script src="scripts/services/peepsService.js" charset="utf-8"></script>
   </head>
-  <body ng-app="myapp">
+  <body ng-app="myApp">
     <img src='images/meanie_3.jpg' width=800 height=400 />
     <h1>MEANie</h1>
     <p>A simple, ugly MEAN stack example. Console has output from GET call.</p>
     <div ng-controller="WhereMyPeeps as wmp">
-      <input type="text" value="" ng-model="nameIn" placeholder="Name">
+      <input type="text" value="" ng-model="wmp.nameIn" placeholder="Name">
       <input type="text" value="" ng-model="wmp.locationIn" placeholder="Location">
-      <button ng-click='wmp.addRecord()'>Add</button>
-      <button ng-click='wmp.getRecords()'>Read</button>
+      <button ng-click='wmp.newPeep()'>Add</button>
+      <button ng-click='wmp.whereMyPeepsAt()'>Read</button>
     </div>
   </body>
 </html>
