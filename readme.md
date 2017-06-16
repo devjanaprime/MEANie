@@ -1,4 +1,7 @@
-![MEANie logo](public/images/meanie_3.jpg)
+MEANie ver 4.0
+===
+
+![MEANie logo](public/images/meanie_4.jpg)
 
 Project Overview
 ================
