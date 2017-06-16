@@ -20,7 +20,7 @@ router.get( '/', function( req, res ){
   });
 });
 
-router.post( '/', function( req, res ){
+app.post( '/', function( req, res ){
   console.log( 'req.body.name: ' + req.body.name );
   // retrieved the req.body
   // putting it into an object to be saved in the db
@@ -32,5 +32,3 @@ router.post( '/', function( req, res ){
   var newRecord=peepsModel( recordToAdd );
   newRecord.save();
 });
-
-module.exports = router;
