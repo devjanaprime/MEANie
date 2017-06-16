@@ -3,13 +3,13 @@
 Project Overview
 ================
 
-MEANie is a project that mostly working, but has some problems:
+MEANie is a project that *mostly* working, but has some problems:
 
 Problems:
 * difficult to read formatting
 * there are some bugs that keep it from working right now
 
-Once the problems have been addressed, the client wants additional functionality"
+Once the problems have been addressed, the client wants additional functionality:
 
 * show data on the DOM, not just in the console
 * if time allows: add ability to delete records from the db

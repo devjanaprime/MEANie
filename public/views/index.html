@@ -3,19 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>MEANie</title>
+    <link rel="stylesheet" href="styles/lookinMean.css">
     <script src="vendors/angular.min.js" charset="utf-8"></script>
     <script src="scripts/peepsApp.js" charset="utf-8"></script>
     <script src="scripts/services/peepsService.js" charset="utf-8"></script>
   </head>
   <body ng-app="myApp">
-    <img src='images/meanie_3.jpg' width=800 height=400 />
-    <h1>MEANie</h1>
-    <p>A simple, ugly MEAN stack example. Console has output from GET call.</p>
-    <div ng-controller="WhereMyPeeps as wmp">
-      <input type="text" value="" ng-model="wmp.nameIn" placeholder="Name">
-      <input type="text" value="" ng-model="wmp.locationIn" placeholder="Location">
-      <button ng-click='wmp.newPeep()'>Add</button>
-      <button ng-click='wmp.whereMyPeepsAt()'>Read</button>
+    <img src='images/meanie_4.jpg' width=40% style='float: left;margin: 9px;'/>
+    <div>
+      <h1>MEANie</h1>
+      <p>Where my Peeps?</p>
+      <div ng-controller="WhereMyPeeps as wmp">
+        <input type="text" value="" ng-model="wmp.nameIn" placeholder="Name">
+        <input type="text" value="" ng-model="wmp.locationIn" placeholder="Location">
+        <button ng-click='wmp.newPeep()'>Add</button>
+        <button ng-click='wmp.whereMyPeepsAt()'>Read</button>
+      </div>
     </div>
   </body>
 </html>
