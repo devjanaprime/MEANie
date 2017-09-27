@@ -1,7 +1,7 @@
-MEANie ver 4.0
+MEANie ver 5.0
 ===
 
-![MEANie logo](public/images/MEANie_5.jpg)
+![MEANie logo](public/images/MEANie_5.png)
 
 Project Overview
 ================
