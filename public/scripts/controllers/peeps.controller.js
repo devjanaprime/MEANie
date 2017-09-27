@@ -6,12 +6,10 @@ var peepToAdd = {
 name= vm.nameIn,
 location= vm.locationIn
 }; //end peepToAdd
-PeepsService.addPeep( peepToAdd );
+PeepsService.peeps.add( peepToAdd );
 }; //end whereMyPeepsAt
 vm.whereMyPeepsAt = function(){
 console.log( 'in whereMyPeepsAt' );
-PeepsService.getPeeps().then( function(){
-console.log( 'back in controller:', PeepsService.allMyPeeps );
-});
+PeepsService.peeps.get();
 }; //end whereMyPeepsAt
 }); // end controller
