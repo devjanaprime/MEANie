@@ -1,4 +1,3 @@
-var myApp=angular.module( 'myApp', [] );
 myApp.controller( 'WhereMyPeeps', function( $http, PeepsService ){
 var vm = this;
 vm.newPeep = function(){
